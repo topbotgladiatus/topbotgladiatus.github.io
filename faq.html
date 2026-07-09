@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TBG — FAQ | Top Bot Gladiatus</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.faq-page { padding: 100px 20px 60px; max-width: 800px; margin: 0 auto; }
+.faq-item { background: #0a1628; border: 1px solid #1a3a5a; border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+.faq-question { padding: 20px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: bold; color: #60a5fa; font-size: 1.05em; transition: color 0.2s; }
+.faq-question:hover { color: #3b82f6; }
+.faq-toggle { font-size: 1.3em; transition: transform 0.2s; }
+.faq-item.active .faq-toggle { transform: rotate(45deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; padding: 0 24px; color: #8899aa; line-height: 1.6; }
+.faq-item.active .faq-answer { max-height: 300px; padding: 0 24px 20px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="nav-container">
+        <a href="/" class="nav-logo"><img src="assets/botao_128.png" alt="TBG" class="logo-img"><span class="logo-text">Top Bot Gladiatus</span></a>
+        <div class="nav-links">
+            <a href="/download.html">Download</a>
+            <a href="/planos.html">Planos</a>
+            <a href="/#features">Recursos</a>
+            <a href="/atualizacoes.html">Atualizações</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/privacy.html">Privacidade</a>
+        </div>
+        <a href="/download.html" class="nav-cta">Baixar TBG</a>
+    </div>
+</nav>
+
+<section class="faq-page">
+    <div class="section-header">
+        <h2>Perguntas Frequentes</h2>
+        <p>Tudo que você precisa saber sobre o TBG</p>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como ativo o teste grátis? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Após instalar a extensão, abra o TBG no Gladiatus, vá na aba Sistema e clique em "Ativar Trial". Você terá 7 dias grátis para testar todos os recursos. O trial é vinculado ao seu Profile Code, então só pode ser usado uma vez por conta.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como compro uma licença? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Acesse a página de Planos, escolha o plano desejado, informe seu Profile Code e email. Você será redirecionado para o Mercado Pago, onde pode pagar com cartão, PIX ou boleto. Após a confirmação do pagamento, a chave de licença é enviada automaticamente para o email informado.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Quais navegadores funcionam? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">O TBG funciona em todos os navegadores baseados em Chromium: Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi e Arc. Não funciona no Firefox.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">É seguro usar? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">O TBG não coleta senha, email ou quaisquer dados de login. A extensão lê apenas o conteúdo da página do Gladiatus para executar as automações. O Profile Code é feito pelo próprio TBG para poder vincular a licença à sua conta após o pagamento do plano desejado. Os pagamentos são processados pelo Mercado Pago, portanto não temos nenhum acesso a seus dados, tudo é feito diretamente com o Mercado Pago.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Pode resultar em banimento? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">O uso de ferramentas de automação pode violar os Termos de Serviço do Gladiatus. O usuário assume total responsabilidade por quaisquer consequências impostas pela Gameforge, incluindo bloqueio ou suspensão da conta. O TBG é fornecido "como está", sem garantias.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como funciona a licença? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">A licença é vinculada ao seu Profile Code do Gladiatus. Cada conta precisa de uma licença própria. A licença é validada automaticamente pelo servidor do TBG. Se você trocar de computador, basta instalar a extensão e sincronizar sua chave na aba Sistema.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Cada conta precisa de uma licença? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Sim, cada conta do Gladiatus precisa de uma licença própria. Mas não se preocupe — oferecemos planos multi-conta com descontos exclusivos para 2 ou 3 contas. Acesse a página de Planos e clique em "Monte Seu Plano" para ver os preços. Para 4 ou mais contas, entre em contato via email.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Como obtenho meu Profile Code? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Abra o TBG no Gladiatus, vá na aba Sistema. Seu Profile Code será exibido na tela. Copie-o e use na hora de comprar ou ativar sua licença.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Funciona em qualquer servidor do Gladiatus? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Sim! O TBG funciona em todos os servidores do Gladiatus. A interface do TBG está disponível em três idiomas: Português, Inglês e Espanhol — você pode escolher o idioma dos menus nas configurações da extensão.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Tem reembolso? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">Como se trata de um produto digital com entrega imediata da chave de licença, não oferecemos reembolso após a entrega. Por isso, oferecemos 7 dias de teste grátis para que você avalie todos os recursos antes de comprar. Em casos de falha técnica comprovada, entre em contato para avaliação.</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand"><img src="assets/botao_128.png" alt="TBG" class="logo-img"> Top Bot Gladiatus</div>
+        <div class="footer-links">
+            <a href="/download.html">Download</a>
+            <a href="/planos.html">Planos</a>
+            <a href="/atualizacoes.html">Atualizações</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/privacy.html">Privacidade</a>
+        </div>
+        <div class="footer-contact"><a href="mailto:topbotgladiatus@gmail.com">topbotgladiatus@gmail.com</a></div>
+    </div>
+    <div class="footer-copy">&copy; 2026 TBG. Todos os direitos reservados. Não afiliado à Gameforge.</div>
+</footer>
+
+<script>
+function toggleFaq(el) {
+    const item = el.parentElement;
+    item.classList.toggle('active');
+}
+</script>
+</body>
+</html>
