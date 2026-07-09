@@ -307,6 +307,29 @@ async function submitCheckout() {
 }
 
 updateMultiPrice();
+
+(function() {
+    const params = new URLSearchParams(window.location.search);
+    const status = params.get('status');
+    if (!status) return;
+    const banner = document.createElement('div');
+    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;padding:16px;text-align:center;font-size:16px;font-weight:bold;z-index:9999;';
+    if (status === 'success') {
+        banner.style.background = '#1a5c1a';
+        banner.style.color = '#fff';
+        banner.textContent = '✅ Pagamento aprovado! Sua licença será ativada em instantes. Volte para a extensão e clique em "Ativar Licença Paga".';
+    } else if (status === 'pending') {
+        banner.style.background = '#b8860b';
+        banner.style.color = '#fff';
+        banner.textContent = '⏳ Pagamento pendente. Assim que for confirmado, sua licença será ativada automaticamente.';
+    } else {
+        banner.style.background = '#8b1a1a';
+        banner.style.color = '#fff';
+        banner.textContent = '❌ Pagamento cancelado. Você pode tentar novamente quando quiser.';
+    }
+    document.body.insertBefore(banner, document.body.firstChild);
+    setTimeout(() => { banner.style.transition = 'opacity 0.5s'; banner.style.opacity = '0'; setTimeout(() => banner.remove(), 500); }, 8000);
+})();
 </script>
 </body>
 </html>
