@@ -10,7 +10,9 @@
 .changelog-content { background: #0a1628; border: 1px solid #1a3a5a; border-radius: 12px; padding: 40px; }
 .changelog-content h1 { color: #3b82f6; font-size: 1.8em; margin-bottom: 8px; }
 .changelog-content .intro { color: #8899aa; line-height: 1.7; margin-bottom: 24px; }
-.changelog-version { margin-bottom: 32px; }
+.changelog-version { margin-bottom: 32px; padding: 24px 0; border-top: 1px solid #1a3a5a; border-bottom: 1px solid #1a3a5a; }
+.changelog-version:first-of-type { border-top: none; padding-top: 0; }
+.changelog-version:last-of-type { border-bottom: none; padding-bottom: 0; }
 .changelog-version-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #1a3a5a; }
 .changelog-version-header .ver-tag { background: #3b82f6; color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
 .changelog-version-header .ver-date { color: #d4a85a; font-size: 0.95em; font-weight: bold; }
@@ -51,7 +53,7 @@
 
             <h2><span class="cat-emoji">&#128295;</span>Correções</h2>
             <ul>
-                <li>Corrigido problema onde o ouro não atualizava em tempo real após pegar ouro ou vender itens dos pacotes.</li>
+                <li>Corrigido problema onde o ouro não atualizava em tempo real após uma compra ou venda.</li>
                 <li>Corrigido problema onde frases dos status do bot eram aplicadas incorretamente.</li>
                 <li>Corrigido looping no mercado da aliança quando não encontrava itens válidos.</li>
             </ul>
