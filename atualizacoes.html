@@ -20,7 +20,8 @@
 .changelog-content h2 .cat-emoji { margin-right: 8px; }
 .changelog-content ul { color: #8899aa; line-height: 1.7; margin-bottom: 12px; padding-left: 24px; }
 .changelog-content ul li { margin-bottom: 6px; }
-.changelog-content strong { color: #ccc; }
+.changelog-content ul ul { color: #8899aa; margin-top: 6px; margin-bottom: 8px; }
+.changelog-content strong { color: #8899aa; font-size: 1.05em; }
 </style>
 </head>
 <body>
@@ -44,6 +45,138 @@
     <div class="changelog-content">
         <h1>Atualizações do TBG</h1>
         <p class="intro">Este documento reúne todas as alterações realizadas no TBG.</p>
+
+        <div class="changelog-version">
+            <div class="changelog-version-header">
+                <span class="ver-tag">Versão 1.0.4</span>
+                <span class="ver-date">17/08/2026</span>
+            </div>
+
+            <h2><span class="cat-emoji">&#9881;</span>Modificados</h2>
+            <ul>
+                <li><strong>Menu e design de eventos</strong>
+                    <ul>
+                        <li>Todo o menu passou por uma reforma com opções melhores.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2><span class="cat-emoji">&#128295;</span>Correções</h2>
+            <ul>
+                <li><strong>Limite de alma no bot</strong>
+                    <ul>
+                        <li>Corrigido loop de cura ao comprar comida com Limite de alma no mercado.</li>
+                        <li>Corrigido bot tentando usar alças e óleos com Limite de alma.</li>
+                    </ul>
+                </li>
+                <li><strong>Guardar ouro no mercado da aliança</strong>
+                    <ul>
+                        <li>Corrigido problema onde pacotes não eram devolvidos ou ficavam no inventário.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2><span class="cat-emoji">✨</span>Adicionado</h2>
+            <ul>
+                <li><strong>Aviso de Limite de alma no Mercado Público</strong>
+                    <ul>
+                        <li>Itens destacados com faixa azul.</li>
+                        <li>Confirmação antes de comprar item com Limite de alma.</li>
+                    </ul>
+                </li>
+                <li><strong>Janelas personalizadas</strong>
+                    <ul>
+                        <li>Janelas de aviso e confirmação substituindo as padrão do navegador.</li>
+                        <li>Seguem o tema escolhido pelo usuário.</li>
+                    </ul>
+                </li>
+                <li><strong>Eventos</strong>
+                    <ul>
+                        <li>Separador de eventos : Normal e Especial</li>
+                        <li>Maximizar xp, agora o bot faz mais xp por rubis gastos</li>
+                        <li>Seletor e configurações individuais por evento</li>
+                    </ul>
+                </li>
+                <li><strong>Destaque para pergaminhos</strong>
+                    <ul>
+                        <li>Adicionado modo para mostrar quais pergaminhos você possui ou não.</li>
+                        <li>Destaque visual para pergaminhos que não possui.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="changelog-version">
+            <div class="changelog-version-header">
+                <span class="ver-tag">Versão 1.0.3</span>
+                <span class="ver-date">11/08/2026</span>
+            </div>
+
+            <h2><span class="cat-emoji">✨</span>Adicionado</h2>
+            <ul>
+                <li><strong>Bag flutua automaticamente ao rolar a página</strong>
+                    <ul>
+                        <li>Ao rolar a página, seu inventário continua sendo mostrado.</li>
+                    </ul>
+                </li>
+                <li><strong>Sistema de atalhos</strong>
+                    <ul>
+                        <li>Barra fixa para atalhos da aliança e curas no leilão.</li>
+                        <li>Atalhos para os filtros nos pacotes, por itens ou cores.</li>
+                    </ul>
+                </li>
+                <li><strong>Melhoria no visual dos pacotes</strong>
+                    <ul>
+                        <li>Filtros agora são exibidos ao lado do inventário.</li>
+                        <li>Ações rápidas do TBG melhoradas.</li>
+                        <li>Melhoria de visualização e compactação de espaço e itens.</li>
+                    </ul>
+                </li>
+                <li><strong>Melhoria visual em relatórios — Arena & Circus</strong>
+                    <ul>
+                        <li>Botão de contra-ataque.</li>
+                        <li>Lista de ataques melhorada.</li>
+                    </ul>
+                </li>
+                <li><strong>Melhoria visual em relatórios — Expedição & Masmorra</strong>
+                    <ul>
+                        <li>Itens ganhos agora são visíveis ao passar o mouse.</li>
+                    </ul>
+                </li>
+                <li><strong>Melhoria visual nos Mercadores / Lojas</strong>
+                    <ul>
+                        <li>Itens com rubis agora são mostrados.</li>
+                        <li>Melhoria visual quando não possuir ouro/rubis para comprar o item.</li>
+                    </ul>
+                </li>
+                <li><strong>Mercado geral e Mercado da aliança</strong>
+                    <ul>
+                        <li>Botão Cancelar todos — com 1 clique você cancela todos os itens que você ofertou.</li>
+                        <li>Botão Cancelar selecionados — você escolhe os itens que deseja cancelar.</li>
+                        <li>Botão Oferta rápida — vender item e deixar listado no mercado da aliança.</li>
+                        <li>Botão Dividir — dividir item empilhado nos slots vazios do inventário.</li>
+                    </ul>
+                </li>
+                <li><strong>Panteão / Missões</strong>
+                    <ul>
+                        <li>Indicador de tempo para próxima missão disponível.</li>
+                        <li>Indicador de máximas missões completadas.</li>
+                        <li>Indicador de missões disponíveis para serem aceitas.</li>
+                        <li>Agrupamento de missões do mesmo tipo.</li>
+                    </ul>
+                </li>
+                <li><strong>Mensagens</strong>
+                    <ul>
+                        <li>Melhoria na visualização de batalhas de aliança.</li>
+                    </ul>
+                </li>
+                <li><strong>Leilão</strong>
+                    <ul>
+                        <li>Agora é possível dar vários lances sem recarregar a página.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
         <div class="changelog-version">
             <div class="changelog-version-header">
