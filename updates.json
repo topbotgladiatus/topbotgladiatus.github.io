@@ -1,7 +1,7 @@
 {
-  "latestVersion": "1.0.7",
-  "latestBuild": "20260823.0251",
-  "downloadUrl": "https://topbotgladiatus.github.io/downloads/TBG-1.0.7.zip",
+  "latestVersion": "1.0.8",
+  "latestBuild": "20260825.1000",
+  "downloadUrl": "https://topbotgladiatus.github.io/downloads/TBG-1.0.8.zip",
   "changelogUrl": "https://topbotgladiatus.github.io/atualizacoes.html",
-  "isFix": true
+  "isFix": false
 }
